@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to Hajin’s Homepage</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+
+    header {
+      background-color: #fff;
+      padding: 20px 40px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    main {
+      padding: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .thumbnail {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      background-color: #eaeaea;
+    }
+
+    .card-content {
+      padding: 16px;
+    }
+
+    .card-title {
+      font-size: 18px;
+      margin: 0 0 8px;
+    }
+
+    .card-link {
+      font-size: 14px;
+      color: #0073e6;
+      text-decoration: none;
+      word-break: break-all;
+    }
+
+    .card-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Open source studio hw</h1>
+    <p>22300263 문하진</p>
+  </header>
+
+  <main>
+    <div class="grid">
+      <!-- 카드 예시 -->
+      <div class="card">
+        <!--<img class="thumbnail" src="오픈소스스튜디오(OSS)/썸네일 사진/nostyle.png" alt="과제1">-->
+        <div class="card-content">
+          <h2 class="card-title">nostyle</h2>
+          <a href="nostyle.html" target="_blank" class="card-link">nostyle.html</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <!--<img class="thumbnail" src="https://via.placeholder.com/400x200.png?text=과제2" alt="과제2">-->
+        <div class="card-content">
+          <h2 class="card-title">style1</h2>
+          <a href="style1.html" target="_blank" class="card-link">style1.html</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <!--<img class="thumbnail" src="https://via.placeholder.com/400x200.png?text=과제3" alt="과제3">-->
+        <div class="card-content">
+          <h2 class="card-title">style2</h2>
+          <a href="style2.html" target="_blank" class="card-link">style2.html</a>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
